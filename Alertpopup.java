@@ -1,6 +1,7 @@
 package auto;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -16,7 +17,7 @@ public class Alertpopup {
 		mail.click();
 		Thread.sleep(3000);
 		String word = driver.switchTo().alert().getText();
-		System.out.println("word");
+		System.out.println(word);
 		driver.switchTo().alert().sendKeys("mohammedhasanbaig");
 		driver.switchTo().alert().accept();
 		Thread.sleep(1000);
